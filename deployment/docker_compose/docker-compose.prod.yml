@@ -137,6 +137,8 @@ services:
       - .env
     volumes:
       - db_volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     logging:
       driver: json-file
       options:
